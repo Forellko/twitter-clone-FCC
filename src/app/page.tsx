@@ -1,4 +1,34 @@
-import Image from 'next/image';
+import { BiHomeCircle, BiUser } from 'react-icons/bi';
+import { HiOutlineHashtag } from 'react-icons/hi';
+import { BsBell, BsBookmark } from 'react-icons/bs';
+import { HiEnvelope } from 'react-icons/hi2';
+
+const NAVIGATION_ITEMS = [
+  {
+    title: 'Home',
+    icon: BiHomeCircle,
+  },
+  {
+    title: 'Explore',
+    icon: HiOutlineHashtag,
+  },
+  {
+    title: 'Notification',
+    icon: BsBell,
+  },
+  {
+    title: 'Messages',
+    icon: HiEnvelope,
+  },
+  {
+    title: 'Bookmarks',
+    icon: BsBookmark,
+  },
+  {
+    title: 'Profile',
+    icon: BiUser,
+  },
+];
 
 export default function Home() {
   return (
